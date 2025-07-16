@@ -1,3 +1,4 @@
+#YAML File to allow htcondor to run on windows easily, for testing the notebook
 services:
   condor-notebook:
     image: htcondor/mini
