@@ -1,0 +1,17 @@
+services:
+  condor-notebook:
+    image: htcondor/mini
+    ports:
+      - "127.0.0.1:9619:9618"
+      - "127.0.0.1:8866:8866"
+    volumes:
+      - .:/home/htcondor/notebook
+    command:
+      - bash
+      - -lc
+      - |
+        condor_master & sleep 5 &&
+        cd /home/htcondor/notebook &&
+        pip install ipywidgets voila ipykernel jupyter-client jupyter-core &&
+        python3 -m ipykernel install --sys-prefix --name python3 --display-name python3 &&
+        voila notebook.ipynb --port=8866 --no-browser --Voila.ip=0.0.0.0 --show_tracebacks=True
