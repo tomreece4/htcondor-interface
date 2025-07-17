@@ -1,10 +1,9 @@
-#YAML File to allow htcondor to run on windows easily, for testing the notebook
 services:
   condor-notebook:
     image: htcondor/mini
     ports:
-      - "127.0.0.1:9619:9618"
-      - "127.0.0.1:8866:8866"
+      - "9618:9618" 
+      - "8866:8866" 
     volumes:
       - .:/home/htcondor/notebook
     command:
