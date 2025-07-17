@@ -1,1 +1,10 @@
+# Python virtual environments
 htcondor_env/
+.env/
+
+# Jupyter checkpoints & caches
+.ipynb_checkpoints/
+__pycache__/
+
+# Docker Compose state/logs
+docker-compose.override.yml
