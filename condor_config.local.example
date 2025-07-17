@@ -1,0 +1,16 @@
+# By default, this project runs a htcondor mini (one machine). if you EITHER remove the .example from this filename, or create a new file within this project called condor_config.local, then condor will instead run this specified setup (specify values below
+# as required)
+
+# Central Manager hostname
+CONDOR_HOST = cm.university.edu
+
+# Only run the scheduler locally
+DAEMON_LIST = SCHEDD
+
+# Security settings (adjust to cluster’s policy)
+SEC_DEFAULT_AUTHENTICATION = GSI
+SEC_DEFAULT_ENCRYPTION     = REQUIRED
+SEC_DEFAULT_INTEGRITY      = REQUIRED
+
+# Local spool area
+SPOOL = /home/htcondor/condor_spool
