@@ -1,6 +1,6 @@
 services:
   condor-notebook:
-    image: htcondor/mini
+    build: .
     ports:
       - "9618:9618" 
       - "8866:8866" 
