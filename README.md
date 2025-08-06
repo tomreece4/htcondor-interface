@@ -1,5 +1,22 @@
-# htcondor-notebook
-A jupyter notebook for submitting jobs to HTCondor
+# HTCondor Job Submission Interface
 
-docker-compose up web: Launches a web ui for submitting condor jobs
-docker-compose up notebook: Launches a notebook for submitting condor jobs
+This project is an easy to use Voila interface, allowing users to submit their deep learning jobs and other projects onto a HTCondor computing cluster, without needing to run anything from the command line. This simplifies the process of running variations of jobs and different projects, allowing more time to be spent experimenting and doing the important work, along with opening up the possibility for non-computing experts and researchers to use HTCondor.
+
+---
+
+## Features
+
+Users are presented with a Job submission form, allowing them to customise the following values by filling in fields:
+
+- <u> Customisable Fields </u>
+    - Job Script Selection
+    - Argument configuration
+    - Resource Requests (CPUs, Memory, Disk, GPUs)
+    - Environment Selection
+    - Custom Requirements
+
+A preview button is also available so that users with more HTCondor experience can see what the submit file would look like, and make sure it's all correct before submitting.
+
+An output box is displayed under the submit/preview buttons, providing users with valuable information about errors, successful submissions and missing values.
+
+
