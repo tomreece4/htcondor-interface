@@ -19,4 +19,6 @@ A preview button is also available so that users with more HTCondor experience c
 
 An output box is displayed under the submit/preview buttons, providing users with valuable information about errors, successful submissions and missing values.
 
+Finally, the current job queue on the HTCondor cluster can be viewed from the manage jobs tab.
+
 
