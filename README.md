@@ -21,4 +21,5 @@ An output box is displayed under the submit/preview buttons, providing users wit
 
 Finally, the current job queue on the HTCondor cluster can be viewed from the manage jobs tab.
 
+![Condor Form](screenshots/condor_interface.png)
 
