@@ -15,6 +15,9 @@ Users are presented with a Job submission form, allowing them to customise the f
     - Environment Selection
     - Custom Requirements
 
+This form mirrors what the user would create in a .sub (submit) file, allowing them to simply fill in the desired fields. Any non-required fields
+can be left blank.
+
 A preview button is also available so that users with more HTCondor experience can see what the submit file would look like, and make sure it's all correct before submitting.
 
 An output box is displayed under the submit/preview buttons, providing users with valuable information about errors, successful submissions and missing values.
