@@ -16,7 +16,7 @@ Users are presented with a Job submission form, allowing them to customise the f
     - Custom Requirements
 
 This form mirrors what the user would create in a .sub (submit) file, allowing them to simply fill in the desired fields. Any non-required fields
-can be left blank.
+can be left blank. Information about each field can be found by clicking the i buttons.
 
 A preview button is also available so that users with more HTCondor experience can see what the submit file would look like, and make sure it's all correct before submitting.
 
